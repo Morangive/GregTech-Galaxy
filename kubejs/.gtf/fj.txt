@@ -1,0 +1,221 @@
+Compiled from "GTRecipeComponents.java"
+public class com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents {
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<net.minecraft.nbt.CompoundTag> TAG;
+
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<net.minecraft.resources.ResourceLocation> RESOURCE_LOCATION;
+
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.api.capability.recipe.RecipeCapability<?>> RECIPE_CAPABILITY;
+
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.api.recipe.chance.logic.ChanceLogic> CHANCE_LOGIC;
+
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.api.recipe.RecipeCondition<?>> RECIPE_CONDITION;
+
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS> FLUID_INGREDIENT;
+
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.integration.kjs.recipe.components.ExtendedOutputItem> EXTENDED_OUTPUT;
+
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.api.recipe.ingredient.EnergyStack$WithIO> ENERGY_STACK;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<dev.latvian.mods.kubejs.item.InputItem> ITEM_IN;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.integration.kjs.recipe.components.ExtendedOutputItem> ITEM_OUT;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS> FLUID_IN;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS> FLUID_OUT;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.api.recipe.ingredient.EnergyStack$WithIO> EU_IN;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.api.recipe.ingredient.EnergyStack$WithIO> EU_OUT;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<java.lang.Integer> CWU_IN;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<java.lang.Integer> CWU_OUT;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.CapabilityMapComponent IN;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.CapabilityMapComponent TICK_IN;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.CapabilityMapComponent OUT;
+
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.CapabilityMapComponent TICK_OUT;
+
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<java.util.Map<com.gregtechceu.gtceu.api.capability.recipe.RecipeCapability<?>, com.gregtechceu.gtceu.api.recipe.chance.logic.ChanceLogic>> CHANCE_LOGIC_MAP;
+
+  public static final java.util.Map<com.gregtechceu.gtceu.api.capability.recipe.RecipeCapability<?>, com.mojang.datafixers.util.Pair<com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<?>, com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<?>>> VALID_CAPS;
+
+  public com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents();
+    Code:
+       0: aload_0
+       1: invokespecial #84                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static void lambda$static$0(com.gregtechceu.gtceu.api.addon.events.KJSRecipeKeyEvent, com.gregtechceu.gtceu.api.addon.IGTAddon);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokeinterface #94,  2           // InterfaceMethod com/gregtechceu/gtceu/api/addon/IGTAddon.registerRecipeKeys:(Lcom/gregtechceu/gtceu/api/addon/events/KJSRecipeKeyEvent;)V
+       7: return
+
+  static {};
+    Code:
+       0: new           #23                 // class com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$1
+       3: dup
+       4: invokespecial #100                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$1."<init>":()V
+       7: putstatic     #102                // Field TAG:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+      10: new           #21                 // class com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$2
+      13: dup
+      14: invokespecial #103                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$2."<init>":()V
+      17: putstatic     #105                // Field RESOURCE_LOCATION:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+      20: new           #19                 // class com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$3
+      23: dup
+      24: invokespecial #106                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$3."<init>":()V
+      27: putstatic     #108                // Field RECIPE_CAPABILITY:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+      30: new           #17                 // class com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$4
+      33: dup
+      34: invokespecial #109                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$4."<init>":()V
+      37: putstatic     #111                // Field CHANCE_LOGIC:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+      40: new           #15                 // class com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$5
+      43: dup
+      44: invokespecial #112                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$5."<init>":()V
+      47: putstatic     #114                // Field RECIPE_CONDITION:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+      50: new           #13                 // class com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$6
+      53: dup
+      54: invokespecial #115                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$6."<init>":()V
+      57: putstatic     #117                // Field FLUID_INGREDIENT:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+      60: new           #11                 // class com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$7
+      63: dup
+      64: invokespecial #118                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$7."<init>":()V
+      67: putstatic     #120                // Field EXTENDED_OUTPUT:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+      70: new           #9                  // class com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$8
+      73: dup
+      74: invokespecial #121                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/GTRecipeComponents$8."<init>":()V
+      77: putstatic     #123                // Field ENERGY_STACK:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+      80: new           #125                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS
+      83: dup
+      84: getstatic     #130                // Field dev/latvian/mods/kubejs/recipe/component/ItemComponents.INPUT:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+      87: getstatic     #136                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.ITEM:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+      90: iconst_0
+      91: invokespecial #139                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS."<init>":(Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;Z)V
+      94: putstatic     #141                // Field ITEM_IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+      97: new           #125                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS
+     100: dup
+     101: getstatic     #120                // Field EXTENDED_OUTPUT:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+     104: getstatic     #136                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.ITEM:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     107: iconst_1
+     108: invokespecial #139                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS."<init>":(Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;Z)V
+     111: putstatic     #143                // Field ITEM_OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     114: new           #125                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS
+     117: dup
+     118: getstatic     #117                // Field FLUID_INGREDIENT:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+     121: getstatic     #146                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.FLUID:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     124: iconst_0
+     125: invokespecial #139                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS."<init>":(Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;Z)V
+     128: putstatic     #148                // Field FLUID_IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     131: new           #125                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS
+     134: dup
+     135: getstatic     #117                // Field FLUID_INGREDIENT:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+     138: getstatic     #146                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.FLUID:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     141: iconst_1
+     142: invokespecial #139                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS."<init>":(Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;Z)V
+     145: putstatic     #150                // Field FLUID_OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     148: new           #125                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS
+     151: dup
+     152: getstatic     #123                // Field ENERGY_STACK:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+     155: getstatic     #153                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.EU:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     158: iconst_0
+     159: invokespecial #139                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS."<init>":(Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;Z)V
+     162: putstatic     #155                // Field EU_IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     165: new           #125                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS
+     168: dup
+     169: getstatic     #123                // Field ENERGY_STACK:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+     172: getstatic     #153                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.EU:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     175: iconst_1
+     176: invokespecial #139                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS."<init>":(Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;Z)V
+     179: putstatic     #157                // Field EU_OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     182: new           #125                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS
+     185: dup
+     186: getstatic     #161                // Field dev/latvian/mods/kubejs/recipe/component/NumberComponent.INT:Ldev/latvian/mods/kubejs/recipe/component/NumberComponent$IntRange;
+     189: getstatic     #164                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.CWU:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     192: iconst_0
+     193: invokespecial #139                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS."<init>":(Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;Z)V
+     196: putstatic     #166                // Field CWU_IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     199: new           #125                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS
+     202: dup
+     203: getstatic     #161                // Field dev/latvian/mods/kubejs/recipe/component/NumberComponent.INT:Ldev/latvian/mods/kubejs/recipe/component/NumberComponent$IntRange;
+     206: getstatic     #164                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.CWU:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     209: iconst_1
+     210: invokespecial #139                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS."<init>":(Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;Z)V
+     213: putstatic     #168                // Field CWU_OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     216: new           #170                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent
+     219: dup
+     220: iconst_0
+     221: invokespecial #173                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent."<init>":(Z)V
+     224: putstatic     #175                // Field IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent;
+     227: new           #170                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent
+     230: dup
+     231: iconst_0
+     232: invokespecial #173                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent."<init>":(Z)V
+     235: putstatic     #177                // Field TICK_IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent;
+     238: new           #170                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent
+     241: dup
+     242: iconst_1
+     243: invokespecial #173                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent."<init>":(Z)V
+     246: putstatic     #179                // Field OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent;
+     249: new           #170                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent
+     252: dup
+     253: iconst_1
+     254: invokespecial #173                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent."<init>":(Z)V
+     257: putstatic     #181                // Field TICK_OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/CapabilityMapComponent;
+     260: new           #183                // class com/gregtechceu/gtceu/integration/kjs/recipe/components/JavaMapRecipeComponent
+     263: dup
+     264: getstatic     #108                // Field RECIPE_CAPABILITY:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+     267: getstatic     #111                // Field CHANCE_LOGIC:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+     270: invokespecial #186                // Method com/gregtechceu/gtceu/integration/kjs/recipe/components/JavaMapRecipeComponent."<init>":(Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;)V
+     273: putstatic     #188                // Field CHANCE_LOGIC_MAP:Ldev/latvian/mods/kubejs/recipe/component/RecipeComponent;
+     276: new           #190                // class java/util/IdentityHashMap
+     279: dup
+     280: invokespecial #191                // Method java/util/IdentityHashMap."<init>":()V
+     283: putstatic     #193                // Field VALID_CAPS:Ljava/util/Map;
+     286: getstatic     #193                // Field VALID_CAPS:Ljava/util/Map;
+     289: getstatic     #136                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.ITEM:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     292: getstatic     #141                // Field ITEM_IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     295: getstatic     #143                // Field ITEM_OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     298: invokestatic  #199                // Method com/mojang/datafixers/util/Pair.of:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/datafixers/util/Pair;
+     301: invokeinterface #205,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     306: pop
+     307: getstatic     #193                // Field VALID_CAPS:Ljava/util/Map;
+     310: getstatic     #146                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.FLUID:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     313: getstatic     #148                // Field FLUID_IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     316: getstatic     #150                // Field FLUID_OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     319: invokestatic  #199                // Method com/mojang/datafixers/util/Pair.of:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/datafixers/util/Pair;
+     322: invokeinterface #205,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     327: pop
+     328: getstatic     #193                // Field VALID_CAPS:Ljava/util/Map;
+     331: getstatic     #153                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.EU:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     334: getstatic     #155                // Field EU_IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     337: getstatic     #157                // Field EU_OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     340: invokestatic  #199                // Method com/mojang/datafixers/util/Pair.of:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/datafixers/util/Pair;
+     343: invokeinterface #205,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     348: pop
+     349: getstatic     #193                // Field VALID_CAPS:Ljava/util/Map;
+     352: getstatic     #164                // Field com/gregtechceu/gtceu/common/data/GTRecipeCapabilities.CWU:Lcom/gregtechceu/gtceu/api/capability/recipe/RecipeCapability;
+     355: getstatic     #166                // Field CWU_IN:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     358: getstatic     #168                // Field CWU_OUT:Lcom/gregtechceu/gtceu/integration/kjs/recipe/components/ContentJS;
+     361: invokestatic  #199                // Method com/mojang/datafixers/util/Pair.of:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/datafixers/util/Pair;
+     364: invokeinterface #205,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     369: pop
+     370: new           #207                // class com/gregtechceu/gtceu/api/addon/events/KJSRecipeKeyEvent
+     373: dup
+     374: invokespecial #208                // Method com/gregtechceu/gtceu/api/addon/events/KJSRecipeKeyEvent."<init>":()V
+     377: astore_0
+     378: invokestatic  #214                // Method com/gregtechceu/gtceu/api/addon/AddonFinder.getAddons:()Ljava/util/List;
+     381: aload_0
+     382: invokedynamic #232,  0            // InvokeDynamic #0:accept:(Lcom/gregtechceu/gtceu/api/addon/events/KJSRecipeKeyEvent;)Ljava/util/function/Consumer;
+     387: invokeinterface #238,  2          // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+     392: getstatic     #193                // Field VALID_CAPS:Ljava/util/Map;
+     395: aload_0
+     396: invokevirtual #242                // Method com/gregtechceu/gtceu/api/addon/events/KJSRecipeKeyEvent.getRegisteredKeys:()Ljava/util/Map;
+     399: invokeinterface #246,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+     404: return
+}

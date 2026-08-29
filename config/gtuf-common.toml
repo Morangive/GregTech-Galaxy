@@ -1,0 +1,107 @@
+#Parallel EUt Multiplier
+#并行能耗倍率：实际 EUt = 配方单次 EUt × 并行数 × 该倍率。
+#Default 1.0: energy scales linearly with parallels.
+#Set to 0.0 for free parallelism (not recommended).
+#Range: 0.0 ~ 1.7976931348623157E308
+parallelEutMultiplier = 1.0
+
+# EnhanceableElectricMachine formula multipliers
+[enhanceableElectric]
+	#Parallel base (exponential): max = base × this^(casing tier-1).
+	#Default 2.0: Steel=×1, Al=×2, SS=×4, Ti=×8, TungstenSteel=×16.
+	#Range: 1.0 ~ 64.0
+	parallelBase = 2.0
+	#Frame energy step: energy mult = 1 - (frame tier-1) × this (floor 0).
+	#Default 0.05: Steel=100%, Al=95%, SS=90%, Ti=85%, TungstenSteel=80%.
+	#Range: 0.0 ~ 1.0
+	frameEnergyStep = 0.05
+	#Pipe speed step: duration mult = 1 - (pipe tier-1) × this (floor 0).
+	#Default 0.1: Bronze=100%, Steel=90%, Ti=70%, TungstenSteel=60%.
+	#Range: 0.0 ~ 1.0
+	pipeSpeedStep = 0.1
+
+# EnhanceableSteamMachine formula multipliers
+[enhanceableSteam]
+	#Parallel base (exponential): max = base × this^(casing tier-1).
+	#Default 4.0: Bronze=×1, Steel=×4.
+	#Range: 1.0 ~ 64.0
+	parallelBase = 4.0
+	#Frame speed step: duration = base^(1 - (frame tier-1) × this).
+	#Default 0.1: Bronze(1)=base, Steel(2)=base^0.9.
+	#Range: 0.0 ~ 1.0
+	frameSpeedStep = 0.1
+
+# Pressure system: unit kPa, 1 atm = 101.325 kPa
+[pressure]
+	#Standard atmospheric pressure (kPa). Chamber pressure relaxes toward this.
+	#标准大气压（kPa），腔压收敛目标。
+	#Range: 0.1 ~ 1.0E9
+	atmosphericPressure = 101.325
+	#Chamber pressure relax base rate (kPa/tick), divided by casing tier.
+	#Constant absolute rate: drops this amount per tick regardless of deviation,
+	#clamped to atmospheric. Higher casing tier → slower relax → more stable.
+	#Range: 1.0E-6 ~ 1.0E9
+	relaxBaseRateKpa = 0.1
+	#Glass min pressure base (kPa): min = max(0.1, base - (glass tier-1) × step).
+	#Range: 0.1 ~ 1.0E9
+	glassMinBaseKpa = 50.0
+	#Glass min pressure step (kPa): each glass tier lowers the min by this amount.
+	#Range: 0.0 ~ 1.0E9
+	glassMinStep = 10.0
+	#Glass max pressure base (kPa): max = base + (glass tier-1) × step.
+	#Range: 0.1 ~ 1.0E9
+	glassMaxBaseKpa = 400.0
+	#Glass max pressure step (kPa): each glass tier raises the max by this amount.
+	#Range: 0.0 ~ 1.0E9
+	glassMaxStep = 200.0
+	#Conduction rate: pressure equalizes toward group mean every 4 ticks.
+	#p += (group mean - p) × conductionRate.
+	#Range: 0.0 ~ 1.0
+	conductionRate = 0.05
+	#Pressure pipe tolerances: "material=maxKpa:minKpa" list (kPa).
+	#Material name must match GTM registry (lowercase, e.g. bronze/steel/titanium/tungstensteel).
+	#Invalid entries are skipped and logged. Pipes burst if pressure exceeds [min,max].
+	pressurePipeTolerances = ["bronze=3000:10", "steel=6000:10", "titanium=12000:5", "tungsten_steel=24000:5"]
+
+# Energy saving hatch
+[energySaving]
+	#Extra multiplier: rate = max(min, (100 - 5 × tier diff × this) / 100).
+	#Tier diff starts at LV=1, MV=2, HV=3, EV=4...
+	#Default 1.0: LV=95%, MV=90%, HV=85%, EV=80% (-5% per tier).
+	#Increase to boost high-tier discount (e.g. 2.0: LV=90%, MV=80%...).
+	#Range: 0.0 ~ 1.7976931348623157E308
+	extraMultiplier = 1.0
+	#Energy rate floor (prevents 0 or negative EUt).
+	#Default 0.05 = 5% (recipes can never be fully free).
+	#Range: 0.01 ~ 1.0
+	minMultiplier = 0.05
+
+# Thread hatch
+[threading]
+	#Minimum voltage tier for thread hatches.
+	#Default: 6 = LuV. Thread hatches below this tier cannot be crafted.
+	#Tier values: 1=ULV, 2=LV, 3=MV, 4=HV, 5=EV, 6=LuV, 7=UV, 8=UHV, 9=UEV, 10=UIV, 11=UXV, 12=OpV, 13=MAX.
+	#Range: 1 ~ 13
+	minTier = 6
+
+# Structure compatibility with vanilla GTM multiblocks (mixin injection)
+[structureCompat]
+	#Allow thread hatches in vanilla GTM multiblock structure slots (autoAbilities mixin).
+	#When on, thread hatches can fill any autoAbilities-defined slot in GTM electric multis
+	#(incl. vanilla machines like Large Assembler). Off: only GTUF multis that explicitly
+	#declare the slot. Structure slots are locked on first formation; restart to apply.
+	threadHatchVanillaInjection = false
+	#Allow energy-saving hatches in vanilla GTM multiblock structure slots (autoAbilities mixin).
+	#When on, energy-saving hatches can fill any autoAbilities-defined slot in GTM electric multis.
+	#Off: only GTUF multis that explicitly declare the slot.
+	#Structure slots are locked on first formation; restart to apply.
+	energySavingHatchVanillaInjection = false
+
+# Glass tier mapping
+[glass]
+	#Glass tier mapping: "registryName=tier" list. Tier = voltage tier (ULV=1/LV=2/.../UV=9).
+	#Defaults: 6 built-in glasses. Add other mod glasses (e.g. "chisel:glass=1"),
+	#modify or remove entries to change/disable. Invalid entries skipped and logged.
+	#Out-of-range tier (>9) in tooltip gracefully hides the voltage name.
+	glassTiers = ["minecraft:glass=1", "minecraft:tinted_glass=2", "gtceu:tempered_glass=3", "gtceu:cleanroom_glass=4", "gtceu:laminated_glass=5", "gtceu:fusion_glass=7"]
+

@@ -1,0 +1,27 @@
+# 运行时生成 / 缓存
+give-natives/
+saves/
+logs/
+crash-reports/
+backups/
+screenshots/
+shaderpacks/
+modernfix/
+local/
+gtceu/prospection_cache/
+kubejs/probe/
+options.txt
+usercache.json
+usernamecache.json
+*.jar.bak
+patchouli_data.json
+rhino.local.properties
+
+# 启动器 / 开发环境
+PCL/
+.vs/
+.vscode/
+.mimosa/
+
+# 打包产物
+*.zip

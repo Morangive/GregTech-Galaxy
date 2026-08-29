@@ -1,0 +1,28 @@
+Compiled from "GTRecipeComponents.java"
+public class com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents {
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<net.minecraft.nbt.CompoundTag> TAG;
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<net.minecraft.resources.ResourceLocation> RESOURCE_LOCATION;
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.api.capability.recipe.RecipeCapability<?>> RECIPE_CAPABILITY;
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.api.recipe.chance.logic.ChanceLogic> CHANCE_LOGIC;
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.api.recipe.RecipeCondition<?>> RECIPE_CONDITION;
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS> FLUID_INGREDIENT;
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.integration.kjs.recipe.components.ExtendedOutputItem> EXTENDED_OUTPUT;
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<com.gregtechceu.gtceu.api.recipe.ingredient.EnergyStack$WithIO> ENERGY_STACK;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<dev.latvian.mods.kubejs.item.InputItem> ITEM_IN;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.integration.kjs.recipe.components.ExtendedOutputItem> ITEM_OUT;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS> FLUID_IN;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS> FLUID_OUT;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.api.recipe.ingredient.EnergyStack$WithIO> EU_IN;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<com.gregtechceu.gtceu.api.recipe.ingredient.EnergyStack$WithIO> EU_OUT;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<java.lang.Integer> CWU_IN;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<java.lang.Integer> CWU_OUT;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.CapabilityMapComponent IN;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.CapabilityMapComponent TICK_IN;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.CapabilityMapComponent OUT;
+  public static final com.gregtechceu.gtceu.integration.kjs.recipe.components.CapabilityMapComponent TICK_OUT;
+  public static final dev.latvian.mods.kubejs.recipe.component.RecipeComponent<java.util.Map<com.gregtechceu.gtceu.api.capability.recipe.RecipeCapability<?>, com.gregtechceu.gtceu.api.recipe.chance.logic.ChanceLogic>> CHANCE_LOGIC_MAP;
+  public static final java.util.Map<com.gregtechceu.gtceu.api.capability.recipe.RecipeCapability<?>, com.mojang.datafixers.util.Pair<com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<?>, com.gregtechceu.gtceu.integration.kjs.recipe.components.ContentJS<?>>> VALID_CAPS;
+  public com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents();
+  private static void lambda$static$0(com.gregtechceu.gtceu.api.addon.events.KJSRecipeKeyEvent, com.gregtechceu.gtceu.api.addon.IGTAddon);
+  static {};
+}

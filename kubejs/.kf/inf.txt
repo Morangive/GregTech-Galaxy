@@ -1,0 +1,21 @@
+Compiled from "InputFluid.java"
+public interface dev.latvian.mods.kubejs.fluid.InputFluid extends dev.latvian.mods.kubejs.fluid.FluidLike,dev.latvian.mods.kubejs.recipe.InputReplacement {
+  public default java.lang.Object replaceInput(dev.latvian.mods.kubejs.recipe.RecipeJS, dev.latvian.mods.kubejs.recipe.ReplacementMatch, dev.latvian.mods.kubejs.recipe.InputReplacement);
+    Code:
+       0: aload_3
+       1: instanceof    #6                  // class dev/latvian/mods/kubejs/fluid/FluidLike
+       4: ifeq          27
+       7: aload_3
+       8: checkcast     #6                  // class dev/latvian/mods/kubejs/fluid/FluidLike
+      11: astore        4
+      13: aload_0
+      14: aload         4
+      16: invokeinterface #18,  1           // InterfaceMethod dev/latvian/mods/kubejs/fluid/FluidLike.kjs$getAmount:()J
+      21: invokeinterface #22,  3           // InterfaceMethod kjs$copy:(J)Ldev/latvian/mods/kubejs/fluid/FluidLike;
+      26: areturn
+      27: aload_0
+      28: aload_0
+      29: invokeinterface #23,  1           // InterfaceMethod kjs$getAmount:()J
+      34: invokeinterface #22,  3           // InterfaceMethod kjs$copy:(J)Ldev/latvian/mods/kubejs/fluid/FluidLike;
+      39: areturn
+}
